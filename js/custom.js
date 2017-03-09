@@ -69,4 +69,46 @@ $(document).ready(function(){
         }
     });
   
+  
+//  Active menu item on click
+
+    $('.navbar-nav li a').click(function() {
+        
+        'use strict';
+       
+       $('.navbar-nav li a').parent().removeClass('active');
+       
+       $(this).parent().addClass('active');
+       
+    });
+    
+//  Highlight menu on scroll
+
+     $(window).scroll(function(){
+         
+         'use strict';
+         
+         $('section').each(function(){
+             
+             'use strict';
+             
+             var sec_id = $(this).attr('id'); // about, contact, download etc...
+             var height = $(this).outerHeight();
+             var gtop   = $(this).offset().top - 70;
+             
+             if($(window).scrollTop() > gtop && $(window).scrollTop() < gtop + height){
+                 
+                 $(".navbar-nav li a[href='#"+ sec_id + "']").parent().addClass('active');
+             }
+             
+             else{
+                 
+                 $(".navbar-nav li a[href='#"+ sec_id + "']").parent().removeClass('active');
+
+             }
+             
+         });
+         
+     });
+  
 });
