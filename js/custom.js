@@ -56,6 +56,7 @@ $(document).ready(function(){
     });
     
     // Smooth Scrolling
+     'use strict';
     $('.nav-item, .scroll-to-top').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
@@ -71,6 +72,7 @@ $(document).ready(function(){
   
   
 //  Active menu item on click
+ 'use strict';
 
     $('.navbar-nav li a').click(function() {
         
@@ -83,6 +85,7 @@ $(document).ready(function(){
     });
     
 //  Highlight menu on scroll
+ 'use strict';
 
      $(window).scroll(function(){
          
@@ -110,5 +113,41 @@ $(document).ready(function(){
          });
          
      });
+     
+    //  Add auto padding to header
+     'use strict';
+    setInterval(function(){
+        
+        'use strict'
+        
+        var winheight = $(window).height();
+        
+        var containerheader = $('.header-container').height();
+        
+        var toppadding = winheight - containerheader;
+        
+        $('.header-container').css({
+            
+            'padding-top' : Math.round(toppadding / 2) + 'px',
+            
+            'padding-bottom' : Math.round(toppadding / 2) + 'px'
+            
+        });
+        
+    }, 10);
+    
+    // BX Slider
+    
+     'use strict'
+    
+    $('.bxslider').bxSlider({
+        
+        slideWidth: 292.5,
+        auto: true,
+        minSlides: 1,
+        maxSlides: 3,
+        slideMargin: 50
+        
+    });
   
 });

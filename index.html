@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <!--BXSlider CSS-->
+    <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />
 </head>
 
 <body>
@@ -53,7 +55,7 @@
         </nav>
         
         <div class="header-overlay">
-            <div class="container">
+            <div class="container header-container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="logo text-center">
@@ -313,18 +315,26 @@
                 </div>
             </div>
         </div>
-        <div class="creen-slider">
-            <div class="carousel">
-                <div class="item"><img src="images/screen-01.png" width="60" height="60" alt="Screen"></div>
-            </div>
-            <div class="carousel">
-                <div class="item"><img src="images/screen-02.png" width="60" height="60" alt="Screen"></div>
-            </div>
-            <div class="carousel">
-                <div class="item"><img src="images/screen-03.png" width="60" height="60" alt="Screen"></div>
-            </div>
-            <div class="carousel">
-                <div class="item"><img src="images/screen-04.png" width="60" height="60" alt="Screen"></div>
+        <div class="screen-slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="bxslider">
+                            <div class="item">
+                                <img src="images/screen-01.png" alt="Screen">
+                            </div>
+                            <div class="item">
+                                <img src="images/screen-02.png" alt="Screen">
+                            </div>
+                            <div class="item">
+                                <img src="images/screen-03.png" alt="Screen">
+                            </div>
+                            <div class="item">
+                                <img src="images/screen-04.png" alt="Screen">
+                            </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
         </div>
     </section>
@@ -511,6 +521,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+<!--BS Slider-->
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 
 </body>
 </html>
