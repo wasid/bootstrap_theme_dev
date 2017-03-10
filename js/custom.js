@@ -149,5 +149,12 @@ $(document).ready(function(){
         slideMargin: 50
         
     });
+    
+    // Counter Up 
+    
+    $('.counter-num').counterUp({
+    delay: 10,
+    time: 2000
+});
   
 });
