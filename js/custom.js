@@ -152,9 +152,17 @@ $(document).ready(function(){
     
     // Counter Up 
     
+    'use strict'
+    
     $('.counter-num').counterUp({
     delay: 10,
     time: 2000
-});
+    });
+    
+    // Animation
+    
+    'use strict'
+    
+    new WOW().init();
   
 });
